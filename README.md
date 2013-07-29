@@ -1,7 +1,7 @@
-YouCompleteMe Vim plugin module for Puppet
-==========================================
+YouCompleteMe Vim plugin module
+===============================
 
-Puppet recipe for installing YouCompleteMe for Vim.
+Puppet recipe for installing [YouCompleteMe](http://github.com/Valloric/YouCompleteMe) for Vim.
 
 ## Usage
 

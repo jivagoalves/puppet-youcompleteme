@@ -7,13 +7,13 @@ Puppet recipe for installing [YouCompleteMe](http://github.com/Valloric/YouCompl
 
 You can just include the class:
 
-```
+```puppet
 class { 'youcompleteme': }
 ```
 
 Or you can also add a `require` for your YouCompleteMe's repo:
 
-```
+```puppet
 # Considering your path to the plugin is ~/.vim/bundle/YouCompleteMe
 class { 'youcompleteme':
   require => Vcsrepo["/home/${id}/.vim/bundle/YouCompleteMe"]
@@ -26,7 +26,7 @@ Internally the only requirement is for having the plugin path directory. See `Op
 
 You can pass in the path to the plugin:
 
-```
+```puppet
 class { 'youcompleteme':
   pluginpath => "/home/${id}/code/YouCompleteMe"
 }

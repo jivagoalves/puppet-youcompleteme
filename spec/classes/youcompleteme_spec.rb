@@ -21,7 +21,7 @@ describe "youcompleteme" do
 
     should contain_exec("make-ycm_core").with({
       "path"    => "/usr/bin:/usr/sbin:/bin",
-      "command" => "make ycm_core",
+      "command" => "cd /home/username/ycm_build && make ycm_core",
       "require" => "Exec[makefiles-ycm]"
     })
   end

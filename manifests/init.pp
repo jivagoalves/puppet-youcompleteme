@@ -41,7 +41,7 @@ class youcompleteme ($pluginpath = "/home/${id}/.vim/bundle/YouCompleteMe") {
 
   exec { 'make-ycm_core':
     path    => '/usr/bin:/usr/sbin:/bin',
-    command => 'make ycm_core',
+    command => "cd ${homedir}/ycm_build && make ycm_core",
     require => Exec['makefiles-ycm']
   }
 }
